@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test name="Test1"  >
+		<groups>
+			<run>
+				<include name="group1"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="oAuth2.googleCode"/>
+		</classes>
+	</test>
+	<test name="Test2" >
+		<groups>
+			<run>
+				<include name="group2"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="oAuth2.googleCode" />
+		</classes>
+	</test>
+</suite> 
